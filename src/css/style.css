@@ -1,0 +1,97 @@
+@import "./reset.css";
+@import "./variables.css";
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post {
+  width: 480px;
+}
+
+.post-author {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.post-author__name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.post-author__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.post-image img {
+  width: 100%;
+}
+
+.post-content {
+  padding: 8px 0 16px;
+}
+
+.post-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.post-text span {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.post:not(:last-child) {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.post-tag {
+  color: rgb(62, 117, 247);
+  margin-right: 8px;
+}
+
+.post-like {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.post-like__active {
+  color: rgb(195, 46, 46);
+}
+
+.header {
+  width: 100%;
+  padding: 12px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: "Tangerine", serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.header-icon {
+  font-size: 24px;
+}
